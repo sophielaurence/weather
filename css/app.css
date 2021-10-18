@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height:100vh;
+  font-family: 'Georgia', sans-serif;
+  font-size:1.25rem;
+  line-height:1.5;
+  padding:0;
+  margin:0;
+}
+
+.home {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  place-items: center;
+  background-color:#fff;
+  color:#D29C67;
+  padding:3rem;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7,1fr);
+}
+
+.main .row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  place-items:center;
+  color:#fff;
+}
