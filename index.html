@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Add Your Project Name Here</title>
+  <title>Mt.Weather</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,31 +16,43 @@
   <link rel="stylesheet" href="css/app.css">
 
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Add your HTML here -->
-<main>
+
   <div class="home">
-    <img src="img/MTweatherlogo.png">
-    <h1>let's go on a hike!</h1>
+    <div class="logo">
+      <img src="img/MTweatherlogo.svg">
     </div>
-    <div>
-    <button>arrow</button>
+    <div class="enter">
+      <button> ⬆ </button>
+    </div>
   </div>
 
-<main>
+
   
     
 
 
 <div class="main">
-         <p class="location">Moab Utah</p>
+  <div class="current">
+         <p class="state">UTAH</p>
+         <p class="town">MOAB</p>
          <p class="temp">78°</p>
-         <p class="description">Pack lots of water and sunscreen!</p>
+         <p class="hilo">H:86 L:72</p>
+         <!-- <p class="description">Pack lots of water and sunscreen!</p> -->
        </div>
+</div>
 
+<div class="weekly">
          <div class="day1 row">
            <p class="day">Mon</p>
            <p class="icon"><i class="fas fa-cloud"></i></p>
@@ -82,17 +94,10 @@
            <p class="high">82</p>
            <p class="low">76</p>
          </div>
-     <div class="day6 row">
-           <p class="day">Sun</p>
-           <p class="icon"><i class="fas fa-sun"></i></p>
-           <p class="high">79</p>
-           <p class="low">61</p>
-         </div>
       
     </div>
   
-  </main>
-
+ 
 
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

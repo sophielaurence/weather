@@ -12,27 +12,100 @@ body {
 }
 
 .home {
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 3fr 1fr;
   place-items: center;
   background-color:#fff;
   color:#D29C67;
-  padding:3rem;
+  background: #fff url(../img/homegraphic.svg) no-repeat bottom center;
+  background-size: 100%;
+    transition:all 1s;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+}
+
+.home .logo img {
+  width: 300px;
+  height: 300px;
+}
+
+.enter button {
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #DB8700;
+}
+
+.open-sesame {
+  transform:translateY(-100%);
+
 }
 
 .main {
-  height: 100%;
+  padding: 2rem;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7,1fr);
+  grid-template-rows: 1fr;
+  background: url(../img/sunnyday.svg) no-repeat bottom center;
+
 }
 
-.main .row {
+.current .state {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 24px;
+  letter-spacing: 4px;
+  line-height: 0px;
+}
+.current {
+  align-self: end;
+  background-color: #E4E4E4;
+  padding: 1rem;
+  border-radius: .5rem ;
+  color: #D29C67;
+  font-family: 'Abril Fatface';
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 25px;
+  /*filter: drop-shadow(0 0 0.16rem gray);*/
+
+}
+
+.hilo {
+  text-align: right;
+  padding-right: 25px;
+  background-color: #E4E4E4;
+  border-radius: .5rem ;
+  color: #D29C67;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  letter-spacing: 8px
+
+}
+
+
+
+.weekly {
+  background-color: #EABB8D;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  padding: 2rem ;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.weekly .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   place-items:center;
-  color:#fff;
+  background-color: #E4E4E4;
+  padding: 1rem;
+  border-radius: .5rem ;
+  color: #427093;
+  font-family: 'Libre Franklin', sans-serif;
 }

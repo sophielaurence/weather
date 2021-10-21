@@ -23,8 +23,8 @@ $( '.current .high').html(convertTemp(d.current.temp) );
 $( '.current .description').html(convertTime(d.current.weather[0]).description );
 $( '.current .printGraphic').html(printGraphic(d.current.weather[0]).description);
 
-$('extended .one .day')html(displayDay(1));
-$('extended .two .day')html(displayDay(2));
+$('extended .one .day').html(displayDay(1));
+$('extended .two .day').html(displayDay(2));
 
 changeTheme(d.current.weather[0].description);
 
@@ -148,7 +148,7 @@ function displayDay(n){
   weekday[3] = "Wed";
   weekday[4] = "Thu";
   weekday[5] = "Fri";
-  weekday[6] = "Sun";
+  weekday[6] = "Sat";
 
   var dispDay = d.getDay() + n;
 
