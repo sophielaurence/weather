@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
   color:#D29C67;
   background: #fff url(../img/homegraphic.svg) no-repeat bottom center;
   background-size: 100%;
-    transition:all 1s;
+    transition:all .7s;
   position:fixed;
   width:100%;
   top:0;
@@ -52,7 +53,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  background: url(../img/sunnyday.svg) no-repeat bottom center;
+  background: url(../img/sunnyday.svg) no-repeat top center;
+  background-size: cover;
 
 }
 
@@ -60,7 +62,7 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 24px;
   letter-spacing: 4px;
-  line-height: 0px;
+  line-height: 1;
 }
 .current {
   align-self: end;
@@ -71,7 +73,7 @@ body {
   font-family: 'Abril Fatface';
   font-size: 50px;
   letter-spacing: 10px;
-  line-height: 25px;
+  line-height: 1;
   /*filter: drop-shadow(0 0 0.16rem gray);*/
 
 }
@@ -96,6 +98,7 @@ body {
   display: grid;
   padding: 2rem ;
   grid-template-rows: repeat(6, 1fr);
+  grid-gap: 1rem;
 }
 
 .weekly .row {

@@ -19,14 +19,48 @@ function weatherBalloon() {
 // display weather information
 function drawWeather( d ) {
 
-$( '.current .high').html(convertTemp(d.current.temp) );
-$( '.current .description').html(convertTime(d.current.weather[0]).description );
-$( '.current .printGraphic').html(printGraphic(d.current.weather[0]).description);
+$( '.current .temp').html(convertTemp(d.current.temp) + '&deg');
+$( '.current .hilo .high').html(convertTemp(d.daily[0].temp.max));
+$( '.current .hilo .low').html(convertTemp(d.daily[0].temp.min));
+// $( '.current .printGraphic').html(printGraphic(d.current.weather[0]).description);
 
-$('extended .one .day').html(displayDay(1));
-$('extended .two .day').html(displayDay(2));
+$('.day1 .day').html(displayDay(1));
+$('.day1 .high').html( convertTemp(d.daily[1].temp.max));
+$('.day1 .low').html( convertTemp(d.daily[1].temp.min));
+$('.day1 .icon').html( printGraphic(d.daily[1].weather[0].description));
+// $('extended .two .day').html(displayDay(2));
 
-changeTheme(d.current.weather[0].description);
+
+$('.day2 .day').html(displayDay(2));
+$('.day2 .high').html( convertTemp(d.daily[2].temp.max));
+$('.day2 .low').html( convertTemp(d.daily[2].temp.min));
+$('.day2 .icon').html( printGraphic(d.daily[2].weather[0].description));
+
+
+$('.day3 .day').html(displayDay(3));
+$('.day3 .high').html( convertTemp(d.daily[3].temp.max));
+$('.day3 .low').html( convertTemp(d.daily[3].temp.min));
+$('.day3 .icon').html( printGraphic(d.daily[3].weather[0].description));
+
+$('.day4 .day').html(displayDay(4));
+$('.day4 .high').html( convertTemp(d.daily[4].temp.max));
+$('.day4 .low').html( convertTemp(d.daily[4].temp.min));
+$('.day4 .icon').html( printGraphic(d.daily[4].weather[0].description));
+
+
+$('.day5 .day').html(displayDay(5));
+$('.day5 .high').html( convertTemp(d.daily[5].temp.max));
+$('.day5 .low').html( convertTemp(d.daily[5].temp.min));
+$('.day5 .icon').html( printGraphic(d.daily[5].weather[0].description));
+
+
+$('.day6 .day').html(displayDay(6));
+$('.day6 .high').html( convertTemp(d.daily[6].temp.max));
+$('.day6 .low').html( convertTemp(d.daily[6].temp.min));
+$('.day6 .icon').html( printGraphic(d.daily[6].weather[0].description));
+
+
+// changeTheme(d.current.weather[0].description);
 
   
 
