@@ -60,7 +60,7 @@ $('.day6 .low').html( convertTemp(d.daily[6].temp.min));
 $('.day6 .icon').html( printGraphic(d.daily[6].weather[0].description));
 
 
-// changeTheme(d.current.weather[0].description);
+changeTheme( d.current.weather[0].description );
 
   
 
@@ -86,19 +86,19 @@ function changeTheme(d){
   
   // if the description includes the word "rain"
   if( d.indexOf('rain') > 0 ) {
-    $('body').addClass('rainy');
+    $('.main').addClass('rainy');
 
   // if the description includes the word "cloud"
   } else if( d.indexOf('cloud') > 0 ) {
-    $('body').addClass('cloudy');
+    $('.main').addClass('cloudy');
 
   // if the description includes the word "sunny"  
   } else if( d.indexOf('sunny') > 0 ) {
-    $('body').addClass('sunny');
+    $('.main').addClass('sunny');
 
   // if none of those cases are true, assume it's clear
   } else {
-    $('body').addClass('clear');
+    $('.main').addClass('clear');
   }
 
 }
@@ -110,11 +110,11 @@ function changeTheme(d){
 function printGraphic(d){
   
   // if the description includes the word "rain"
-  if( d.indexOf('rain') > 0 ) {
+  if( d.indexOf('rainy') > 0 ) {
     return '<img src="img/svg/Cloud.svg" alt="Cloud icon">';
   
   // if the description includes the word "cloud"
-  } else if( d.indexOf('cloud') > 0 ) {
+  } else if( d.indexOf('cloudy') > 0 ) {
     return '<img src="img/svg/Cloud.svg" alt="Cloud icon">';
   
   // if the description includes the word "sunny"

@@ -53,9 +53,24 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  background: url(../img/sunnyday.svg) no-repeat top center;
-  background-size: cover;
+  background-size: cover !important;
 
+}
+
+.sunny {
+    background: url(../img/sunnyday.svg) no-repeat top center;
+}
+
+.rainy {
+  background:  url(../img/rainyday.svg) no-repeat top center;
+}
+
+.cloudy {
+  background: url(../img/cloudyday.svg) no-repeat top center;
+}
+
+.clear {
+  background: url(../img/sunnyday.svg) no-repeat top center;
 }
 
 .current .state {
@@ -90,6 +105,9 @@ body {
 
 }
 
+.row img {
+    height: 3rem;
+  }
 
 
 .weekly {
