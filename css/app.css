@@ -36,10 +36,15 @@ body {
 
 .enter button {
   border: none;
-  padding: 1rem;
+  /*padding: 1rem*/;
   border-radius: 50%;
   color: #fff;
   background-color: #DB8700;
+}
+
+.enter button img {
+  height: 4rem;
+  width: 3rem;
 }
 
 .open-sesame {
